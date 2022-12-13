@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+<button onclick="goBack()">Back</button>
+
+<h2>{{heading}}</h2>
+
+<table style="width:100%">
+  <tr>
+	{% for col in cols %}
+	<th>{{col}}</th>
+	{% endfor %}
+  </tr>
+  
+  {% for result in results %}
+  <tr>
+	{% for r in result %}
+    <td>{{r}}</td>
+	{% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+<script>
+function goBack() {
+  location.href="http://127.0.0.1:5000/getResult"
+}
+</script>
+</html>
+

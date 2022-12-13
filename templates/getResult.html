@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="goBack()">Back</button>
+<h2>Reports</h2>
+
+<form  action="{{ url_for('getResultPage')}}" method="post">
+  <input type="radio" id="BG1" name="BG" value="BG1">
+  <label for="BG1">Make a report showing the total expenditures of the store region and the individual stores having expendiature of more than 400000</label><br>
+  <input type="radio" id="BG2" name="BG" value="BG2">
+  <label for="BG2">Check which date of the month is the store's peak sales day for top 5 performing store based on sales</label><br>
+  <input type="radio" id="BG3" name="BG" value="BG3">
+  <label for="BG3">Analyze the store's sales by customer type and overall sales based on customer type and display first six</label><br>
+  <input type="radio" id="BG4" name="BG" value="BG4">
+  <label for="BG4">Store</label><br>
+  <input type="radio" id="BG5" name="BG" value="BG5">
+  <label for="BG5">Store</label><br>
+  <input type="radio" id="BG6" name="BG" value="BG6">
+  <label for="BG6">Store</label><br>
+  <input type="radio" id="BG7" name="BG" value="BG7">
+  <label for="BG7">Store</label><br>
+  <button>Get Report</button>
+</form> 
+
+</body>
+<script>
+function goBack() {
+  location.href="http://127.0.0.1:5000/"
+}
+</script>
+</html>
+

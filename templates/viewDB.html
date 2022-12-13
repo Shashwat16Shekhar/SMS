@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="goBack()">Back</button>
+<br>
+<h2>Database Tables</h2>
+<br>
+<form  action="{{ url_for('viewDBPage')}}" method="post">
+  <input type="radio" id="storeRegion" name="viewData" value="storeRegion">
+  <label for="storeRegion">Store Region</label><br><br>
+  <input type="radio" id="store" name="viewData" value="store">
+  <label for="store">Store</label><br><br>
+  <input type="radio" id="expType" name="viewData" value="expType">
+  <label for="expType">Expenditure Type</label><br><br>
+  <input type="radio" id="exp" name="viewData" value="exp">
+  <label for="exp">Expenditure</label><br><br>
+  <input type="radio" id="cus" name="viewData" value="cus">
+  <label for="cus">Customer</label><br><br>
+  <input type="radio" id="cusPh" name="viewData" value="cusPh">
+  <label for="cusPh">Customer Phone</label><br><br>
+  <input type="radio" id="prodCat" name="viewData" value="prodCat">
+  <label for="prodCat">Product Category</label><br><br>
+  <input type="radio" id="product" name="viewData" value="product">
+  <label for="product">Product</label><br><br>
+  <input type="radio" id="trans" name="viewData" value="trans">
+  <label for="trans">Transaction</label><br><br>
+  <input type="radio" id="transP" name="viewData" value="transP">
+  <label for="transP">Transaction on Product</label><br><br>
+<br>
+  <button>View</button><br><br>
+</form> 
+
+</body>
+<script>
+function goBack() {
+  location.href="http://127.0.0.1:5000/"
+}
+</script>
+</html>
+
